@@ -3,16 +3,16 @@ import { Heart, Activity, Radio, Cloud, ArrowRight, Zap, Shield, CheckCircle } f
 
 const Home: React.FC = () => {
   return (
-    <main className="bg-white">
+    <main className="bg-gradient-to-b from-slate-50 to-white">
       {/* Hero Section with Banner Image */}
-      <section className="relative min-h-[90vh] pt-24 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <section className="relative min-h-[90vh] pt-24 overflow-hidden bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 via-blue-800/40 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-blue-950/75 to-indigo-950/60 z-10"></div>
           <img 
             src="/src/assets/images/Eldercare_patient.png" 
             alt="Healthcare Professional with Patient" 
-            className="w-full h-full object-cover object-right"
+            className="w-full h-full object-cover object-right opacity-50"
           />
         </div>
 
@@ -20,21 +20,21 @@ const Home: React.FC = () => {
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24">
           <div className="max-w-3xl">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-8">
-              <Zap className="text-blue-300" size={16} />
-              <span className="text-sm font-semibold text-white">AI-Powered Technology</span>
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-xl rounded-full border border-blue-400/30 mb-8 shadow-lg shadow-blue-500/20">
+              <Zap className="text-blue-400" size={18} />
+              <span className="text-sm font-bold text-blue-100 tracking-wide">AI-Powered Technology</span>
             </div>
 
             {/* Main Heading */}
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Reinventing Heart & Lung Monitoring with{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-cyan-300 to-purple-300">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400">
                 AI-Driven Audio Cardiography
               </span>
             </h1>
 
             {/* Subheading */}
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed max-w-2xl">
+            <p className="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed max-w-2xl font-light">
               Continuous, intelligent, non-invasive health insights combining cutting-edge acoustic sensing with artificial intelligence
             </p>
 
@@ -44,14 +44,14 @@ const Home: React.FC = () => {
                 href="https://order.niroga.ai" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 rounded-full font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-bold text-lg shadow-2xl shadow-blue-600/50 hover:shadow-blue-500/60 hover:scale-105 transition-all duration-300"
               >
                 Explore Our Devices
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </a>
               <a 
                 href="/technology"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md text-white rounded-full font-bold text-lg border-2 border-white/30 hover:bg-white/20 transition-all duration-300"
+                className="inline-flex items-center gap-3 px-10 py-5 bg-white/10 backdrop-blur-xl text-white rounded-full font-bold text-lg border-2 border-white/40 hover:bg-white/20 hover:border-white/60 transition-all duration-300 shadow-lg"
               >
                 Our Technology
               </a>
@@ -88,15 +88,15 @@ const Home: React.FC = () => {
       </section>
 
       {/* Key Features Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gradient-to-b from-white via-slate-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <p className="text-blue-600 font-bold uppercase tracking-wider mb-4">Technology</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <p className="text-blue-600 font-bold uppercase tracking-widest mb-4 text-sm">Technology</p>
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent mb-6">
               AI-Enhanced Audio Cardiography
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
               Combining cutting-edge acoustic sensing with artificial intelligence to detect heart and lung anomalies early
             </p>
           </div>
@@ -108,42 +108,42 @@ const Home: React.FC = () => {
                 icon: Heart,
                 title: "AI-Enhanced Auscultation",
                 description: "Advanced machine learning algorithms analyze heart and lung sounds with unprecedented accuracy",
-                color: "from-red-500 to-pink-500"
+                color: "from-rose-500 to-pink-600"
               },
               {
                 icon: Radio,
                 title: "3D Audio Localization",
                 description: "Pinpoint the exact location of cardiac and pulmonary anomalies with spatial audio mapping",
-                color: "from-blue-500 to-cyan-500"
+                color: "from-blue-600 to-cyan-600"
               },
               {
                 icon: Activity,
                 title: "Continuous Monitoring",
                 description: "24/7 wearable tracking for comprehensive cardiopulmonary health insights",
-                color: "from-purple-500 to-indigo-500"
+                color: "from-indigo-600 to-purple-600"
               },
               {
                 icon: Cloud,
                 title: "Cloud Sharing & Analytics",
                 description: "Seamlessly share data with healthcare providers and access detailed health analytics",
-                color: "from-green-500 to-emerald-500"
+                color: "from-emerald-600 to-teal-600"
               }
             ].map((feature, index) => (
               <div 
                 key={index}
-                className="group relative bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-blue-300 hover:shadow-2xl transition-all duration-300"
+                className="group relative bg-white p-8 rounded-3xl border border-slate-200 hover:border-blue-400 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500"
               >
                 {/* Icon */}
-                <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <feature.icon className="text-white" size={32} />
                 </div>
                 
                 {/* Content */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
+                <p className="text-slate-600 leading-relaxed">{feature.description}</p>
 
                 {/* Hover Effect */}
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             ))}
           </div>
@@ -346,29 +346,23 @@ const Home: React.FC = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+            {/* Final CTA Section */}
+      <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
+        <div className="relative max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Transform Healthcare?
           </h2>
-          <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light">
             Join our pilot program or learn more about investment opportunities
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center">
             <a 
               href="/contact"
-              className="px-10 py-4 bg-white text-blue-600 rounded-full font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="px-12 py-5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-bold text-lg shadow-2xl shadow-blue-600/50 hover:shadow-blue-500/60 hover:scale-105 transition-all duration-300"
             >
               Contact Us
-            </a>
-            <a 
-              href="https://order.niroga.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-10 py-4 bg-white/10 backdrop-blur-md text-white rounded-full font-bold text-lg border-2 border-white/30 hover:bg-white/20 transition-all duration-300"
-            >
-              View Investor Info
             </a>
           </div>
         </div>
@@ -378,3 +372,4 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
