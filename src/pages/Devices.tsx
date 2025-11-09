@@ -1,5 +1,4 @@
-import React from 'react';
-import { Bluetooth, Battery, Smartphone, Cloud, Heart, Radio, ArrowRight, Check } from 'lucide-react';
+import { Bluetooth, Battery, Smartphone, Cloud, ArrowRight, Check } from 'lucide-react';
 
 export default function Devices() {
   return (

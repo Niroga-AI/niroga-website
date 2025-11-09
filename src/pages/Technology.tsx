@@ -1,4 +1,3 @@
-import React from 'react';
 import { Cpu, Waves, Activity, Database, Shield, Zap, ArrowRight } from 'lucide-react';
 
 export default function Technology() {
