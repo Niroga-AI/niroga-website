@@ -3,89 +3,82 @@ import { Heart, Activity, Radio, Cloud, ArrowRight, Zap, Shield, CheckCircle } f
 
 const Home: React.FC = () => {
   return (
-    <main className="bg-white">
-      {/* Hero Section with Modern Curve Design */}
-      <section className="relative min-h-[90vh] pt-20 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
-        {/* Background Image with Better Visibility */}
+    <main className="bg-gradient-to-b from-slate-50 to-white">
+      {/* Hero Section with Banner Image */}
+      <section className="relative min-h-[90vh] pt-24 overflow-hidden bg-slate-900">
+        {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-blue-50/70 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-blue-950/50 to-transparent z-10"></div>
           <img 
             src="/src/assets/images/Eldercare_patient.png" 
             alt="Healthcare Professional with Patient" 
-            className="w-full h-full object-cover object-right opacity-40"
+            className="w-full h-full object-cover object-right opacity-80"
           />
         </div>
 
-        {/* Curved Bottom Border */}
-        <div className="absolute bottom-0 left-0 right-0 z-30">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-24">
-            <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z" fill="white"/>
-          </svg>
-        </div>
-
         {/* Hero Content */}
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24">
           <div className="max-w-3xl">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full mb-8 shadow-lg shadow-blue-500/30">
-              <Zap className="text-white" size={18} />
-              <span className="text-sm font-bold text-white tracking-wide">AI-Powered Technology</span>
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-xl rounded-full border border-blue-400/30 mb-8 shadow-lg shadow-blue-500/20">
+              <Zap className="text-blue-400" size={18} />
+              <span className="text-sm font-bold text-blue-100 tracking-wide">AI-Powered Technology</span>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Reinventing Heart & Lung Monitoring with{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400">
                 AI-Driven Audio Cardiography
               </span>
             </h1>
 
             {/* Subheading */}
-            <p className="text-xl md:text-2xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
+            <p className="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed max-w-2xl font-light">
               Continuous, intelligent, non-invasive health insights combining cutting-edge acoustic sensing with artificial intelligence
             </p>
 
-            {/* CTA Buttons */}
+            {/* CTA Button */}
             <div className="flex flex-wrap gap-4">
               <a 
                 href="https://order.niroga.ai" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-bold text-lg shadow-2xl shadow-blue-600/30 hover:shadow-blue-600/50 hover:scale-105 transition-all duration-300"
+                className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-bold text-lg shadow-2xl shadow-blue-600/50 hover:shadow-blue-500/60 hover:scale-105 transition-all duration-300"
               >
                 Explore Our Devices
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </a>
               <a 
                 href="/technology"
-                className="inline-flex items-center gap-3 px-10 py-5 bg-white text-blue-600 rounded-full font-bold text-lg border-2 border-blue-200 hover:border-blue-400 hover:bg-blue-50 transition-all duration-300 shadow-lg"
+                className="inline-flex items-center gap-3 px-10 py-5 bg-white/10 backdrop-blur-xl text-white rounded-full font-bold text-lg border-2 border-white/40 hover:bg-white/20 hover:border-white/60 transition-all duration-300 shadow-lg"
               >
                 Our Technology
               </a>
             </div>
 
             {/* Stats Display */}
-            <div className="mt-12 flex flex-wrap gap-6">
-              <div className="bg-white/90 backdrop-blur-md rounded-2xl px-6 py-4 border border-blue-100 shadow-lg">
+            <div className="mt-12 flex flex-wrap gap-8">
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl px-6 py-4 border border-white/20">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center">
                     <span className="text-white font-black text-xl">4</span>
                   </div>
                   <div>
-                    <p className="text-sm text-slate-500 font-medium">Patents</p>
-                    <p className="text-slate-900 font-bold">Filed</p>
+                    <p className="text-sm text-blue-200">Patents</p>
+                    <p className="text-white font-bold">Filed</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white/90 backdrop-blur-md rounded-2xl px-6 py-4 border border-purple-100 shadow-lg">
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl px-6 py-4 border border-white/20">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
                     <Shield className="text-white" size={24} />
                   </div>
                   <div>
-                    <p className="text-sm text-slate-500 font-medium">24/7</p>
-                    <p className="text-slate-900 font-bold">Continuous Monitoring</p>
+                    <p className="text-sm text-blue-200">24/7</p>
+                    <p className="text-white font-bold">Continuous Monitoring</p>
                   </div>
                 </div>
               </div>
