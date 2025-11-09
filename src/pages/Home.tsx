@@ -8,11 +8,11 @@ const Home: React.FC = () => {
       <section className="relative min-h-[90vh] pt-24 overflow-hidden bg-slate-900">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-blue-950/50 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 via-blue-950/30 to-transparent z-10"></div>
           <img 
             src="/src/assets/images/Eldercare_patient.png" 
             alt="Healthcare Professional with Patient" 
-            className="w-full h-full object-cover object-right opacity-80"
+            className="w-full h-full object-cover object-right opacity-95"
           />
         </div>
 
