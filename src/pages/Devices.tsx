@@ -43,7 +43,7 @@ export default function Devices() {
                 ))}
               </div>
 
-              <a href="https://order.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-teal-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-xl transition">
+              <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-teal-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-xl transition">
                 Order Now <ArrowRight size={18} />
               </a>
             </div>
@@ -115,7 +115,7 @@ export default function Devices() {
                 ))}
               </div>
 
-              <a href="https://order.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white rounded-lg font-semibold hover:shadow-xl transition">
+              <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white rounded-lg font-semibold hover:shadow-xl transition">
                 Order Now <ArrowRight size={18} />
               </a>
             </div>
@@ -211,7 +211,7 @@ export default function Devices() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Monitor?</h2>
           <p className="text-xl text-teal-50 mb-8">Choose the device that fits your healthcare needs</p>
-          <a href="https://order.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-10 py-4 bg-white text-teal-600 rounded-lg font-semibold hover:bg-teal-50 transition">
+          <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-10 py-4 bg-white text-teal-600 rounded-lg font-semibold hover:bg-teal-50 transition">
             View All Devices <ArrowRight size={20} />
           </a>
         </div>

@@ -10,7 +10,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li><Link to="/devices" className="hover:text-white">Devices</Link></li>
               <li><Link to="/technology" className="hover:text-white">Technology</Link></li>
-              <li><a href="https://order.niroga.ai" target="_blank" rel="noopener noreferrer" className="hover:text-white">Order</a></li>
+              <li><a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="hover:text-white">Order</a></li>
             </ul>
           </div>
           <div>

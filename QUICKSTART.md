@@ -42,7 +42,7 @@ npm run dev
 
 ## External Links
 
-- **Order Now**: https://order.niroga.ai (in header and various CTAs)
+- **Order Now**: https://orders.niroga.ai (in header and various CTAs)
 
 ## Next Steps for Production
 

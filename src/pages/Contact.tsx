@@ -282,7 +282,7 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-xl text-indigo-50 mb-8">Join healthcare providers transforming patient care with Niroga</p>
-          <a href="https://order.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-10 py-4 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-indigo-50 transition">
+          <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-10 py-4 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-indigo-50 transition">
             Order Now or Learn More
           </a>
         </div>

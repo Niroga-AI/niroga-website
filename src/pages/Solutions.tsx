@@ -41,7 +41,7 @@ export default function Solutions() {
                     <li>✓ Therapy progress tracking</li>
                     <li>✓ Integration with VA systems</li>
                   </ul>
-                  <a href="https://order.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-6 px-6 py-2 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-indigo-50 transition">
+                  <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-6 px-6 py-2 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-indigo-50 transition">
                     Learn More <ArrowRight size={16} />
                   </a>
                 </div>
@@ -70,7 +70,7 @@ export default function Solutions() {
                     <li>✓ Postpartum complications prevention</li>
                     <li>✓ OB/GYN integration</li>
                   </ul>
-                  <a href="https://order.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-6 px-6 py-2 bg-white text-pink-600 rounded-lg font-semibold hover:bg-pink-50 transition">
+                  <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-6 px-6 py-2 bg-white text-pink-600 rounded-lg font-semibold hover:bg-pink-50 transition">
                     Learn More <ArrowRight size={16} />
                   </a>
                 </div>
@@ -103,7 +103,7 @@ export default function Solutions() {
                     <li>✓ Hospital readmission prevention</li>
                     <li>✓ Multi-generational monitoring</li>
                   </ul>
-                  <a href="https://order.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-6 px-6 py-2 bg-white text-emerald-600 rounded-lg font-semibold hover:bg-emerald-50 transition">
+                  <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-6 px-6 py-2 bg-white text-emerald-600 rounded-lg font-semibold hover:bg-emerald-50 transition">
                     Learn More <ArrowRight size={16} />
                   </a>
                 </div>
@@ -132,7 +132,7 @@ export default function Solutions() {
                     <li>✓ Surgical recovery monitoring</li>
                     <li>✓ Senior pet health tracking</li>
                   </ul>
-                  <a href="https://order.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-6 px-6 py-2 bg-white text-amber-600 rounded-lg font-semibold hover:bg-amber-50 transition">
+                  <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-6 px-6 py-2 bg-white text-amber-600 rounded-lg font-semibold hover:bg-amber-50 transition">
                     Learn More <ArrowRight size={16} />
                   </a>
                 </div>
@@ -231,7 +231,7 @@ export default function Solutions() {
                     <li key={fi} className="text-gray-700 font-medium">✓ {feature}</li>
                   ))}
                 </ul>
-                <a href="https://order.niroga.ai" target="_blank" rel="noopener noreferrer" className="block w-full text-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-lg font-semibold hover:shadow-lg transition">
+                <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="block w-full text-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-lg font-semibold hover:shadow-lg transition">
                   Get Started
                 </a>
               </div>

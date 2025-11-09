@@ -48,7 +48,7 @@ const Home: React.FC = () => {
             {/* CTA Button */}
             <div className="flex flex-wrap gap-4">
               <a 
-                href="https://order.niroga.ai" 
+                href="https://orders.niroga.ai" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 rounded-full font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
@@ -174,7 +174,7 @@ const Home: React.FC = () => {
               <div className="relative bg-white rounded-3xl shadow-2xl p-8 border-2 border-blue-100">
                 <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6">
                   <img 
-                    src="/src/assets/Product.png" 
+                    src="/src/assets/images/Product.png" 
                     alt="Niroga Stethoscope" 
                     className="w-full h-auto"
                   />

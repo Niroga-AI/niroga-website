@@ -147,7 +147,7 @@ export default function Technology() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Experience the Technology</h2>
           <p className="text-xl text-purple-50 mb-8">Discover how acoustic intelligence can transform your health monitoring</p>
-          <a href="https://order.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-10 py-4 bg-white text-purple-600 rounded-lg font-semibold hover:bg-purple-50 transition">
+          <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-10 py-4 bg-white text-purple-600 rounded-lg font-semibold hover:bg-purple-50 transition">
             Try Niroga Today <ArrowRight size={20} />
           </a>
         </div>
