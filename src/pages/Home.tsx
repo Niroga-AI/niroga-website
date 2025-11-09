@@ -10,15 +10,15 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 via-blue-800/40 to-transparent z-10"></div>
           <img 
-            src="/src/assets/images/Eldercare_patient.png" 
+            src="/images/Eldercare_patient1.jpg" 
             alt="Healthcare Professional with Patient" 
             className="w-full h-full object-cover object-right"
           />
         </div>
 
         {/* Curved Bottom Shape */}
-        <div className="absolute bottom-0 left-0 right-0 z-10">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
+        <div className="absolute bottom-0 left-0 right-0 z-10 -mb-px">
+          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
             <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="white"/>
           </svg>
         </div>
@@ -160,8 +160,8 @@ const Home: React.FC = () => {
       {/* How It Works Section - Curved Design */}
       <section className="relative py-24 bg-gradient-to-br from-blue-50 to-purple-50">
         {/* Curved Top Shape */}
-        <div className="absolute top-0 left-0 right-0">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full rotate-180">
+        <div className="absolute top-0 left-0 right-0 -mt-px">
+          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full rotate-180 block">
             <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="white"/>
           </svg>
         </div>
@@ -362,8 +362,8 @@ const Home: React.FC = () => {
       {/* Final CTA - Curved Design */}
       <section className="relative py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 overflow-hidden">
         {/* Curved Top */}
-        <div className="absolute top-0 left-0 right-0 z-0">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full rotate-180">
+        <div className="absolute top-0 left-0 right-0 z-0 -mt-px">
+          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full rotate-180 block">
             <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="white"/>
           </svg>
         </div>

@@ -88,7 +88,7 @@ export default function Technology() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
                 <div className="text-5xl font-black text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text mb-3">4</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Patents Granted</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Patents Filed</h3>
                 <p className="text-gray-700">Core audio cardiography technology, 3D localization methods, and AI-driven analysis algorithms</p>
               </div>
               <div>

@@ -84,7 +84,7 @@ export default function Solutions() {
               <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-white"></div>
               {/* Background Image */}
               <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition duration-500">
-                <img src="/src/assets/images/Eldercare_patient.png" alt="Eldercare Patient" className="w-full h-full object-cover" />
+                <img src="/src/assets/images/1.jpg" alt="Eldercare Patient" className="w-full h-full object-cover" />
               </div>
               <div className="relative p-12 text-white min-h-96 flex flex-col justify-between">
                 <div>
@@ -139,30 +139,6 @@ export default function Solutions() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Clinical Outcomes */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Proven Clinical Outcomes</h2>
-            <p className="text-xl text-gray-600">Results from real-world deployments</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { metric: "87%", description: "Early detection rate for cardiac events" },
-              { metric: "42%", description: "Reduction in hospital readmissions" },
-              { metric: "99.2%", description: "Signal quality consistency" },
-              { metric: "24/7", description: "Continuous monitoring capability" }
-            ].map((outcome, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-orange-400 transition text-center">
-                <div className="text-5xl font-black text-transparent bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text mb-4">{outcome.metric}</div>
-                <p className="text-gray-700 font-medium">{outcome.description}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

@@ -11,12 +11,12 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
       
       - name: Install dependencies
@@ -25,21 +25,24 @@ jobs:
       - name: Build project
         run: npm run build
       
-      - name: Deploy to Linode
-        uses: appleboy/scp-action@master
+      - name: Deploy to Linode via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.LINODE_HOST }}
           username: ${{ secrets.LINODE_USER }}
-          password: ${{ secrets.LINODE_PASSWORD }}
+          key: ${{ secrets.LINODE_SSH_KEY }}
           source: "dist/*"
           target: "/var/www/niroga-website"
           strip_components: 1
+          rm: true
       
-      - name: Restart Nginx
-        uses: appleboy/ssh-action@master
+      - name: Restart services on Linode
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.LINODE_HOST }}
           username: ${{ secrets.LINODE_USER }}
-          password: ${{ secrets.LINODE_PASSWORD }}
+          key: ${{ secrets.LINODE_SSH_KEY }}
           script: |
-            sudo systemctl reload nginx
+            cd /var/www/niroga-website
+            systemctl reload nginx
+            pm2 restart niroga-api || pm2 start server.ts --name niroga-api --interpreter tsx
