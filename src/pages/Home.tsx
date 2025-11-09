@@ -174,7 +174,7 @@ const Home: React.FC = () => {
               <div className="relative bg-white rounded-3xl shadow-2xl p-8 border-2 border-blue-100">
                 <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6">
                   <img 
-                    src="/src/assets/images/Product.png" 
+                    src="/images/Product.png" 
                     alt="Niroga Stethoscope" 
                     className="w-full h-auto"
                   />

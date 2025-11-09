@@ -83,7 +83,7 @@ export default function Solutions() {
               <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-white"></div>
               {/* Background Image */}
               <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition duration-500">
-                <img src="/src/assets/images/1.jpg" alt="Eldercare Patient" className="w-full h-full object-cover" />
+                <img src="/images/Eldercare_patient.jpg" alt="Eldercare Patient" className="w-full h-full object-cover" />
               </div>
               <div className="relative p-12 text-white min-h-96 flex flex-col justify-between">
                 <div>
@@ -114,7 +114,17 @@ export default function Solutions() {
             <div className="group relative overflow-hidden rounded-3xl">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-600 to-orange-600 group-hover:scale-105 transition duration-500"></div>
               <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-white"></div>
-              <div className="relative p-12 text-white min-h-96 flex flex-col justify-between">
+              
+              {/* Pet Image */}
+              <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 group-hover:opacity-30 transition-opacity duration-500">
+                <img 
+                  src="/images/VetWithDog.png" 
+                  alt="Pet Health Monitoring" 
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+
+              <div className="relative p-12 text-white min-h-96 flex flex-col justify-between z-10">
                 <div>
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-white/30 transition">
                     <Users size={32} />
@@ -136,6 +146,143 @@ export default function Solutions() {
                     Learn More <ArrowRight size={16} />
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Telemedicine & Family Connection Use Cases */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Telemedicine & Family Connection</h2>
+            <p className="text-xl text-gray-600">Remote auscultation powered by Niroga — hear hearts clearly from anywhere</p>
+          </div>
+
+          <div className="flex flex-col gap-12 md:gap-16">
+            {/* Telemedicine: Doctor listens remotely */}
+            <div className="group relative overflow-hidden rounded-3xl border border-gray-200 bg-white flex flex-col md:flex-row">
+              <div className="absolute inset-0 opacity-15 group-hover:opacity-25 transition-opacity duration-500"></div>
+              <div className="md:w-[48%] lg:w-1/2 h-full">
+                <img
+                  src="/images/Doctorwittelemedicine.png"
+                  alt="Doctor remotely listening via telemedicine"
+                  className="w-full h-full min-h-[380px] object-cover object-center"
+                />
+              </div>
+              <div className="md:w-[52%] lg:w-1/2 p-8 flex flex-col justify-center">
+                  <p className="text-sm font-semibold uppercase tracking-wider text-blue-600 mb-2">Use Case</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Telemedicine Auscultation</h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    A clinician can perform real-time heart and lung listening while the patient (or caregiver) places the
+                    Niroga stethoscope at home. High-fidelity audio and AI-guided placement ensure clinical-quality auscultation
+                    over a secure connection.
+                  </p>
+                  <ul className="space-y-2 text-gray-700 mb-6">
+                    <li>• Live remote listening with clinical clarity</li>
+                    <li>• AI prompts for correct placement and recording</li>
+                    <li>• Session notes and recordings saved to the chart</li>
+                  </ul>
+                  <a
+                    href="/contact"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white bg-linear-to-r from-blue-600 to-purple-600 font-semibold hover:shadow-lg transition"
+                  >
+                    Talk to Sales <ArrowRight size={16} />
+                  </a>
+              </div>
+            </div>
+
+            {/* Family connection: child hears mother's heart from abroad */}
+            <div className="group relative overflow-hidden rounded-3xl border border-gray-200 bg-white flex flex-col md:flex-row">
+              <div className="md:w-[52%] lg:w-1/2 order-2 md:order-1 p-8 flex flex-col justify-center">
+                  <p className="text-sm font-semibold uppercase tracking-wider text-rose-600 mb-2">Use Case</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Cross‑Border Family Heart Listening</h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Families separated by distance can listen to each other’s heart sounds in real time. A mother at home places the
+                    Niroga stethoscope, and her child abroad can listen live and share the moment—strengthening connection and enabling
+                    remote wellness checks.
+                  </p>
+                  <ul className="space-y-2 text-gray-700 mb-6">
+                    <li>• Private, secure live heart sharing</li>
+                    <li>• Record and replay treasured heartbeats</li>
+                    <li>• Optional clinician review when needed</li>
+                  </ul>
+                  <a
+                    href="/contact"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white bg-linear-to-r from-rose-600 to-orange-600 font-semibold hover:shadow-lg transition"
+                  >
+                    Get Early Access <ArrowRight size={16} />
+                  </a>
+              </div>
+              <div className="md:w-[48%] lg:w-1/2 order-1 md:order-2 h-full">
+                <img
+                  src="/images/Eldercare_patient.png"
+                  alt="Family listening to heart sounds remotely"
+                  className="w-full h-full min-h-[380px] object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      {/* Dedicated Veterinary Telemedicine Section */}
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="grid lg:grid-cols-12 gap-10 items-stretch">
+            {/* Image Side */}
+            <div className="lg:col-span-7 rounded-3xl overflow-hidden shadow-xl ring-1 ring-gray-200 bg-white">
+              <img
+                src="/images/VetWithDog.png"
+                alt="Veterinarian performing remote-enabled auscultation on a dog"
+                className="w-full h-full object-cover object-center min-h-[420px]"
+                loading="lazy"
+              />
+            </div>
+            {/* Content Side */}
+            <div className="lg:col-span-5 flex flex-col justify-center">
+              <div className="mb-6">
+                <p className="text-sm font-semibold tracking-wider uppercase text-amber-600 mb-2">Veterinary Telemedicine</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">Remote Auscultation for Companion Animal Care</h2>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Extend high-quality cardiac and respiratory assessment beyond the clinic. Niroga enables veterinarians to
+                  guide pet owners in real time, capturing diagnostic-grade heart and lung sounds for triage, follow‑ups,
+                  anesthesia risk evaluation, and post‑operative recovery.
+                </p>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                {[
+                  'Pre‑op & anesthesia risk review',
+                  'Post‑surgery recovery monitoring',
+                  'Chronic condition management',
+                  'Senior pet cardiopulmonary trends'
+                ].map((point) => (
+                  <div key={point} className="flex items-start gap-2">
+                    <span className="mt-1 inline-block w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                    <span className="text-gray-700 text-sm font-medium leading-snug">{point}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="space-y-4 text-gray-700 text-sm leading-relaxed mb-8">
+                <p>
+                  AI‑assisted placement guides owners to optimal acoustic windows. Automatic quality scoring prevents
+                  unusable captures, while encrypted sharing lets specialists review complex cases without delay.
+                </p>
+                <p>
+                  Historical waveform comparison and trend analytics help intervene earlier in degenerative or progressive
+                  cardiopulmonary disease, improving outcomes and reducing in‑clinic stress for anxious animals.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-4">
+                <a href="/contact" className="px-7 py-3 rounded-full bg-linear-to-r from-amber-600 to-orange-600 text-white font-semibold shadow hover:shadow-lg transition inline-flex items-center gap-2">
+                  Request Vet Pilot <ArrowRight size={16} />
+                </a>
+                <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-full border border-amber-300 text-amber-700 font-semibold hover:bg-amber-50 transition">
+                  View Pricing
+                </a>
               </div>
             </div>
           </div>

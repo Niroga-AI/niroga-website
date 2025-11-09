@@ -9,7 +9,7 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="/src/assets/images/NirogaRectangularLogo.png" alt="Niroga" className="h-10 w-auto" />
+          <img src="/images/NirogaRectangularLogo.png" alt="Niroga" className="h-10 w-auto" />
         </Link>
 
         <div className="hidden md:flex items-center space-x-1">
