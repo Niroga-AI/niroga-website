@@ -264,7 +264,7 @@ const Home: React.FC = () => {
             <div className="group relative bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl sm:rounded-3xl p-6 sm:p-10 border-2 border-indigo-400 hover:border-indigo-600 hover:shadow-2xl transition-all duration-300 md:col-span-2 lg:col-span-1">
               {/* Featured Badge */}
               <div className="absolute -top-3 -right-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg">
-                ⭐ AVAILABLE NOW
+                AVAILABLE NOW
               </div>
               
               <div className="mb-6 flex justify-center">
@@ -310,7 +310,7 @@ const Home: React.FC = () => {
             <div className="group relative bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl sm:rounded-3xl p-6 sm:p-10 border-2 border-teal-200 opacity-75 md:col-span-2 lg:col-span-1">
               {/* Coming Soon Badge */}
               <div className="absolute -top-3 -right-3 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg">
-                🚀 COMING SOON
+                COMING SOON
               </div>
               
               <div className="mb-6 flex justify-center relative">

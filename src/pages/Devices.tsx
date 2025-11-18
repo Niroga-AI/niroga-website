@@ -72,7 +72,7 @@ export default function Devices() {
             {/* Left - Content */}
             <div className="relative">
               <div className="absolute -top-4 -left-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg z-10">
-                🚀 COMING SOON
+                COMING SOON
               </div>
               <p className="text-teal-600 font-bold uppercase tracking-widest mb-3 sm:mb-4 text-xs sm:text-sm mt-12">Next Generation</p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Niroga Chest Band</h2>

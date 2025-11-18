@@ -18,7 +18,6 @@ export default function Header() {
           <Link to="/technology" className="px-3 lg:px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition">Technology</Link>
           <Link to="/devices" className="px-3 lg:px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition">Devices</Link>
           <Link to="/solutions" className="px-3 lg:px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition">Solutions</Link>
-          <Link to="/blog" className="px-3 lg:px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition">Blog</Link>
           <Link to="/contact" className="px-3 lg:px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition">Contact</Link>
         </div>
 
