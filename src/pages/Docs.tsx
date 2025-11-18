@@ -19,7 +19,6 @@ interface DocArticle {
 
 export default function Docs() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedSection, setSelectedSection] = useState<string | null>(null);
 
   const docSections: DocSection[] = [
     {
@@ -221,10 +220,6 @@ export default function Docs() {
       ]
     }
   ];
-
-  const allArticles = docSections.flatMap(section => 
-    section.articles.map(article => ({ ...article, sectionId: section.id, sectionTitle: section.title }))
-  );
 
   const filteredSections = searchQuery
     ? docSections.map(section => ({
