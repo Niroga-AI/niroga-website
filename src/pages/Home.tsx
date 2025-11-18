@@ -15,7 +15,7 @@ const Home: React.FC = () => {
           <img 
             src="/images/Eldercare_patient1.jpg" 
             alt="Healthcare Professional with Patient" 
-            className="w-full h-full object-cover object-center sm:object-right"
+            className="w-full h-full object-cover object-[65%_center] sm:object-[75%_center] md:object-right"
           />
         </div>
 
