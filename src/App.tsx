@@ -7,6 +7,11 @@ import Technology from './pages/Technology';
 import Devices from './pages/Devices';
 import Solutions from './pages/Solutions';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import Blog from './pages/Blog';
+import Docs from './pages/Docs';
+import Support from './pages/Support';
 
 function App() {
   return (
@@ -20,6 +25,11 @@ function App() {
           <Route path="/devices" element={<Devices />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/docs" element={<Docs />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
         </Routes>
         <Footer />
       </div>

@@ -1,9 +1,12 @@
 import React from 'react';
 import { Heart, Activity, Radio, Cloud, ArrowRight, Zap, Shield, CheckCircle } from 'lucide-react';
+import SEOHead, { pageMetadata } from '../components/SEOHead';
 
 const Home: React.FC = () => {
   return (
-    <main className="bg-white">
+    <>
+      <SEOHead {...pageMetadata.home} />
+      <main className="bg-white">
       {/* Hero Section with Banner Image - Curved Bottom */}
       <section className="relative min-h-[90vh] pt-24 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
         {/* Background Image with Overlay */}
@@ -391,6 +394,7 @@ const Home: React.FC = () => {
         </div>
       </section>
     </main>
+    </>
   );
 };
 

@@ -1,8 +1,11 @@
 import { Cpu, Waves, Activity, Database, Shield, Zap, ArrowRight } from 'lucide-react';
+import SEOHead, { pageMetadata } from '../components/SEOHead';
 
 export default function Technology() {
   return (
-    <main className="bg-white">
+    <>
+      <SEOHead {...pageMetadata.technology} />
+      <main className="bg-white">
       {/* Hero Section */}
       <section className="relative min-h-96 pt-28 pb-16 overflow-hidden bg-gradient-to-br from-purple-600 to-blue-500">
         <div className="absolute inset-0 opacity-20">
@@ -153,5 +156,6 @@ export default function Technology() {
         </div>
       </section>
     </main>
+    </>
   );
 }

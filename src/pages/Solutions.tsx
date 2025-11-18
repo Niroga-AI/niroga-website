@@ -1,8 +1,11 @@
 import { ArrowRight, Heart, Users, Baby, Zap } from 'lucide-react';
+import SEOHead, { pageMetadata } from '../components/SEOHead';
 
 export default function Solutions() {
   return (
-    <main className="bg-white">
+    <>
+      <SEOHead {...pageMetadata.solutions} />
+      <main className="bg-white">
       {/* Hero Section */}
       <section className="relative min-h-96 pt-28 pb-16 overflow-hidden bg-gradient-to-br from-orange-600 to-red-500">
         <div className="absolute inset-0 opacity-20">
@@ -398,5 +401,6 @@ export default function Solutions() {
         </div>
       </section>
     </main>
+    </>
   );
 }

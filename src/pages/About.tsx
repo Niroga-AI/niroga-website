@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Target, Eye, Lightbulb, Award } from 'lucide-react';
+import SEOHead, { pageMetadata } from '../components/SEOHead';
 
 export default function About() {
   return (
-    <main className="bg-white">
+    <>
+      <SEOHead {...pageMetadata.about} />
+      <main className="bg-white">
       {/* Hero Section */}
       <section className="relative min-h-96 pt-28 pb-16 overflow-hidden bg-gradient-to-br from-blue-600 to-green-500">
         <div className="absolute inset-0 opacity-20">
@@ -132,5 +135,6 @@ export default function About() {
         </div>
       </section>
     </main>
+    </>
   );
 }

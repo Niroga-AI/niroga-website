@@ -1,8 +1,11 @@
 import { Bluetooth, Battery, Smartphone, Cloud, ArrowRight, Check } from 'lucide-react';
+import SEOHead, { pageMetadata } from '../components/SEOHead';
 
 export default function Devices() {
   return (
-    <main className="bg-white">
+    <>
+      <SEOHead {...pageMetadata.devices} />
+      <main className="bg-white">
       {/* Hero Section */}
       <section className="relative min-h-96 pt-28 pb-16 overflow-hidden bg-gradient-to-br from-teal-600 to-cyan-500">
         <div className="absolute inset-0 opacity-20">
@@ -217,5 +220,6 @@ export default function Devices() {
         </div>
       </section>
     </main>
+    </>
   );
 }

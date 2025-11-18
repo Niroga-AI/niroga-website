@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Mail, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import SEOHead, { pageMetadata } from '../components/SEOHead';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -21,29 +22,57 @@ export default function Contact() {
     };
 
     try {
-      const apiUrl = import.meta.env.PROD 
-        ? '/api/contact' 
-        : 'http://localhost:3001/api/contact';
+      // Using Web3Forms - Free form submission service
+      // Get access key from environment variable
+      const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '';
+      
+      // Fallback to mailto if Web3Forms key not configured
+      if (!WEB3FORMS_ACCESS_KEY) {
+        const subject = encodeURIComponent(`Contact Form: ${data.subject}`);
+        const body = encodeURIComponent(
+          `Name: ${data.fullName}\n` +
+          `Email: ${data.email}\n` +
+          `Organization: ${data.organization}\n\n` +
+          `Subject: ${data.subject}\n\n` +
+          `Message:\n${data.message}`
+        );
         
-      const response = await fetch(apiUrl, {
+        window.location.href = `mailto:yasantha@niroga.ai?subject=${subject}&body=${body}`;
+        
+        setSubmitted(true);
+        (e.target as HTMLFormElement).reset();
+        setTimeout(() => setSubmitted(false), 5000);
+        setLoading(false);
+        return;
+      }
+
+      // Web3Forms submission
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          name: data.fullName,
+          email: data.email,
+          subject: `Contact Form: ${data.subject}`,
+          message: `Organization: ${data.organization}\n\nSubject: ${data.subject}\n\nMessage:\n${data.message}`,
+          from_name: 'Niroga.ai Contact Form',
+        }),
       });
 
       const result = await response.json();
 
-      if (response.ok) {
+      if (response.ok && result.success) {
         setSubmitted(true);
         (e.target as HTMLFormElement).reset();
         setTimeout(() => setSubmitted(false), 5000);
       } else {
-        setError(result.error || 'Failed to send message. Please try again.');
+        setError(result.message || 'Failed to send message. Please try again.');
       }
     } catch (err) {
-      setError('Failed to send message. Please make sure the server is running.');
+      setError('Failed to send message. Please try using our email: contact@niroga.ai');
       console.error('Error:', err);
     } finally {
       setLoading(false);
@@ -51,7 +80,9 @@ export default function Contact() {
   };
 
   return (
-    <main className="bg-white">
+    <>
+      <SEOHead {...pageMetadata.contact} />
+      <main className="bg-white">
       {/* Hero Section */}
       <section className="relative min-h-80 pt-28 pb-16 overflow-hidden bg-gradient-to-br from-indigo-600 via-purple-500 to-pink-500">
         <div className="absolute inset-0 opacity-20">
@@ -288,5 +319,6 @@ export default function Contact() {
         </div>
       </section>
     </main>
+    </>
   );
 }
