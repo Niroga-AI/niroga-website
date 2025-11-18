@@ -7,26 +7,26 @@ export default function Technology() {
       <SEOHead {...pageMetadata.technology} />
       <main className="bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-96 pt-28 pb-16 overflow-hidden bg-gradient-to-br from-purple-600 to-blue-500">
+      <section className="relative min-h-64 sm:min-h-80 md:min-h-96 pt-20 sm:pt-24 md:pt-28 pb-12 sm:pb-16 overflow-hidden bg-gradient-to-br from-purple-600 to-blue-500">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+          <div className="absolute top-10 left-10 w-48 h-48 sm:w-72 sm:h-72 bg-white rounded-full blur-3xl"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          <p className="text-purple-200 font-semibold uppercase tracking-widest mb-4">Advanced Engineering</p>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">Our Technology</h1>
-          <p className="text-xl text-purple-50 max-w-3xl leading-relaxed">Powered by cutting-edge AI and acoustic engineering for next-generation health monitoring</p>
+          <p className="text-purple-200 font-semibold uppercase tracking-widest mb-3 sm:mb-4 text-xs sm:text-sm">Advanced Engineering</p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">Our Technology</h1>
+          <p className="text-base sm:text-lg md:text-xl text-purple-50 max-w-3xl leading-relaxed">Powered by cutting-edge AI and acoustic engineering for next-generation health monitoring</p>
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="py-24 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="text-purple-600 font-semibold uppercase tracking-widest mb-4">Process</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">How Niroga Works</h2>
+          <div className="text-center mb-12 sm:mb-16 md:mb-20">
+            <p className="text-purple-600 font-semibold uppercase tracking-widest mb-3 sm:mb-4 text-xs sm:text-sm">Process</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">How Niroga Works</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 mb-12">
             {[
               { num: "01", title: "Acoustic Capture", desc: "Ultra-sensitive microphones capture the full spectrum of heart and lung sounds with unprecedented fidelity" },
               { num: "02", title: "AI Processing", desc: "Advanced machine learning algorithms analyze patterns and extract critical acoustic features in real-time" },
@@ -36,10 +36,10 @@ export default function Technology() {
                 {i < 2 && (
                   <div className="hidden md:block absolute top-20 -right-4 w-8 h-1 bg-gradient-to-r from-purple-500 to-blue-500"></div>
                 )}
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 border border-gray-200 hover:shadow-xl transition">
-                  <div className="text-5xl font-black text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text mb-4">{step.num}</div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{step.desc}</p>
+                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-gray-200 hover:shadow-xl transition">
+                  <div className="text-4xl sm:text-5xl font-black text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text mb-3 sm:mb-4">{step.num}</div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{step.title}</h3>
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -48,15 +48,15 @@ export default function Technology() {
       </section>
 
       {/* Key Capabilities */}
-      <section className="py-24 bg-gradient-to-br from-gray-900 to-gray-800">
+      <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20 text-white">
-            <p className="text-purple-400 font-semibold uppercase tracking-widest mb-4">Capabilities</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Advanced Features</h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">Industry-leading acoustic monitoring with AI integration</p>
+          <div className="text-center mb-12 sm:mb-16 md:mb-20 text-white">
+            <p className="text-purple-400 font-semibold uppercase tracking-widest mb-3 sm:mb-4 text-xs sm:text-sm">Capabilities</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Advanced Features</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">Industry-leading acoustic monitoring with AI integration</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               { icon: Waves, title: "3D Audio Localization", desc: "Spatial audio mapping pinpoints cardiac and pulmonary anomalies with precision" },
               { icon: Cpu, title: "Machine Learning", desc: "Continuously adapting algorithms learn from patterns for better accuracy over time" },
@@ -66,13 +66,13 @@ export default function Technology() {
               { icon: Shield, title: "Enterprise Security", desc: "HIPAA/GDPR compliant with bank-grade encryption for all health data" }
             ].map((feature, i) => (
               <div key={i} className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
-                <div className="relative bg-gray-800 rounded-2xl p-8 border border-gray-700 group-hover:border-purple-500 transition">
-                  <div className="w-14 h-14 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                    <feature.icon className="w-7 h-7 text-white" />
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl sm:rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                <div className="relative bg-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-700 group-hover:border-purple-500 transition">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition">
+                    <feature.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{feature.desc}</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">{feature.title}</h3>
+                  <p className="text-sm sm:text-base text-gray-400 leading-relaxed">{feature.desc}</p>
                 </div>
               </div>
             ))}
@@ -81,26 +81,26 @@ export default function Technology() {
       </section>
 
       {/* Patents & Innovation */}
-      <section className="py-24 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-12 border-2 border-purple-200">
-            <p className="text-purple-600 font-bold uppercase tracking-widest mb-4">Innovation & IP</p>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Protected Technology</h2>
+          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border-2 border-purple-200">
+            <p className="text-purple-600 font-bold uppercase tracking-widest mb-3 sm:mb-4 text-xs sm:text-sm">Innovation & IP</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">Protected Technology</h2>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
               <div>
-                <div className="text-5xl font-black text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text mb-3">4</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Patents Filed</h3>
-                <p className="text-gray-700">Core audio cardiography technology, 3D localization methods, and AI-driven analysis algorithms</p>
+                <div className="text-4xl sm:text-5xl font-black text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text mb-2 sm:mb-3">4</div>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Patents Filed</h3>
+                <p className="text-sm sm:text-base text-gray-700">Core audio cardiography technology, 3D localization methods, and AI-driven analysis algorithms</p>
               </div>
               <div>
-                <div className="text-5xl font-black text-transparent bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text mb-3">∞</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Ongoing R&D</h3>
-                <p className="text-gray-700">Continuous innovation in acoustic signal processing, machine learning optimization, and clinical applications</p>
+                <div className="text-4xl sm:text-5xl font-black text-transparent bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text mb-2 sm:mb-3">∞</div>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Ongoing R&D</h3>
+                <p className="text-sm sm:text-base text-gray-700">Continuous innovation in acoustic signal processing, machine learning optimization, and clinical applications</p>
               </div>
             </div>
 
-            <p className="text-gray-700 leading-relaxed">Our research team continuously pushes the boundaries of acoustic health monitoring, exploring new clinical applications and improving algorithm accuracy through advanced signal processing techniques.</p>
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Our research team continuously pushes the boundaries of acoustic health monitoring, exploring new clinical applications and improving algorithm accuracy through advanced signal processing techniques.</p>
           </div>
         </div>
       </section>

@@ -7,28 +7,28 @@ export default function Devices() {
       <SEOHead {...pageMetadata.devices} />
       <main className="bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-96 pt-28 pb-16 overflow-hidden bg-gradient-to-br from-teal-600 to-cyan-500">
+      <section className="relative min-h-64 sm:min-h-80 md:min-h-96 pt-20 sm:pt-24 md:pt-28 pb-12 sm:pb-16 overflow-hidden bg-gradient-to-br from-teal-600 to-cyan-500">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 right-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+          <div className="absolute top-10 right-10 w-48 h-48 sm:w-72 sm:h-72 bg-white rounded-full blur-3xl"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          <p className="text-teal-200 font-semibold uppercase tracking-widest mb-4">Hardware</p>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">Our Devices</h1>
-          <p className="text-xl text-teal-50 max-w-3xl leading-relaxed">Premium hardware designed for continuous acoustic health monitoring with enterprise-grade reliability</p>
+          <p className="text-teal-200 font-semibold uppercase tracking-widest mb-3 sm:mb-4 text-xs sm:text-sm">Hardware</p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">Our Devices</h1>
+          <p className="text-base sm:text-lg md:text-xl text-teal-50 max-w-3xl leading-relaxed">Premium hardware designed for continuous acoustic health monitoring with enterprise-grade reliability</p>
         </div>
       </section>
 
       {/* Niroga Chest Band */}
-      <section className="py-24 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16 md:mb-24">
             {/* Left - Content */}
             <div>
-              <p className="text-teal-600 font-bold uppercase tracking-widest mb-4">Device 01</p>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Niroga Chest Band</h2>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">Ultra-sensitive acoustic sensors in a comfortable, hospital-grade fabric band. Continuous 24/7 monitoring without interruption.</p>
+              <p className="text-teal-600 font-bold uppercase tracking-widest mb-3 sm:mb-4 text-xs sm:text-sm">Device 01</p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Niroga Chest Band</h2>
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">Ultra-sensitive acoustic sensors in a comfortable, hospital-grade fabric band. Continuous 24/7 monitoring without interruption.</p>
               
-              <div className="space-y-4 mb-8">
+              <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                 {[
                   "Ultra-sensitive MEMS microphones capture full-spectrum sound",
                   "Hypoallergenic, breathable fabric rated for 14-day continuous wear",
@@ -37,32 +37,32 @@ export default function Devices() {
                   "Wireless Bluetooth 5.2 with 100m range",
                   "App-controlled settings and cloud sync"
                 ].map((feature, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-teal-600 to-cyan-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Check size={16} className="text-white" />
+                  <div key={i} className="flex items-start gap-2 sm:gap-3">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-r from-teal-600 to-cyan-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Check size={14} className="text-white" />
                     </div>
-                    <span className="text-gray-700">{feature}</span>
+                    <span className="text-sm sm:text-base text-gray-700">{feature}</span>
                   </div>
                 ))}
               </div>
 
-              <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-teal-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-xl transition">
-                Order Now <ArrowRight size={18} />
+              <a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r from-teal-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-xl transition text-sm sm:text-base w-full sm:w-auto">
+                Order Now <ArrowRight size={16} />
               </a>
             </div>
 
             {/* Right - Visual */}
-            <div className="flex items-center justify-center">
-              <div className="relative w-full h-96 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-3xl flex items-center justify-center border-2 border-teal-200">
-                <div className="text-9xl">🩺</div>
+            <div className="flex items-center justify-center order-first md:order-last">
+              <div className="relative w-full h-64 sm:h-80 md:h-96 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl sm:rounded-3xl flex items-center justify-center border-2 border-teal-200">
+                <img src="/images/chest-band.png" alt="Niroga Chest Band" className="w-2/3 sm:w-3/4 h-auto object-contain" />
               </div>
             </div>
           </div>
 
           {/* Specs Grid */}
-          <div className="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-8 border border-teal-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Technical Specifications</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-teal-200">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">Technical Specifications</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
               {[
                 { label: "Microphones", value: "4x MEMS Arrays" },
                 { label: "Frequency Range", value: "20Hz - 8kHz" },
@@ -74,8 +74,8 @@ export default function Devices() {
                 { label: "Operating Temp", value: "-10°C to 50°C" }
               ].map((spec, i) => (
                 <div key={i}>
-                  <p className="text-teal-600 font-semibold text-sm uppercase mb-2">{spec.label}</p>
-                  <p className="text-2xl font-bold text-gray-900">{spec.value}</p>
+                  <p className="text-teal-600 font-semibold text-xs sm:text-sm uppercase mb-1 sm:mb-2">{spec.label}</p>
+                  <p className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">{spec.value}</p>
                 </div>
               ))}
             </div>
@@ -90,7 +90,7 @@ export default function Devices() {
             {/* Left - Visual */}
             <div className="order-2 md:order-1 flex items-center justify-center">
               <div className="relative w-full h-96 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl flex items-center justify-center border-2 border-indigo-200 overflow-hidden">
-                <img src="/src/assets/Product.png" alt="Niroga Stethoscope" className="w-3/4 h-auto object-contain" />
+                <img src="/images/Product.png" alt="Niroga Stethoscope" className="w-3/4 h-auto object-contain" />
               </div>
             </div>
 
