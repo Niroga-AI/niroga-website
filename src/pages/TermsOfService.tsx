@@ -256,8 +256,6 @@ export default function TermsOfService() {
               <p><strong>Niroga.ai</strong></p>
               <p>Email: legal@niroga.ai</p>
               <p>Support: support@niroga.ai</p>
-              <p>Address: [Your Business Address]</p>
-              <p>Phone: [Your Contact Number]</p>
             </div>
           </section>
 

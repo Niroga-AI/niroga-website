@@ -156,8 +156,6 @@ export default function PrivacyPolicy() {
             <div className="bg-gray-50 p-4 rounded-lg text-gray-700">
               <p><strong>Niroga.ai</strong></p>
               <p>Email: privacy@niroga.ai</p>
-              <p>Address: [Your Business Address]</p>
-              <p>Phone: [Your Contact Number]</p>
             </div>
           </section>
 
