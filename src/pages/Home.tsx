@@ -8,14 +8,23 @@ const Home: React.FC = () => {
       <SEOHead {...pageMetadata.home} />
       <main className="bg-white">
       {/* Hero Section with Banner Image - Curved Bottom */}
-      <section className="relative min-h-[85vh] sm:min-h-[90vh] pt-16 sm:pt-24 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <section className="relative min-h-[75vh] sm:min-h-[70vh] md:min-h-[75vh] lg:min-h-screen pt-20 sm:pt-30 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-800/60 md:via-blue-800/40 to-transparent z-10"></div>
+          {/* Bottom Fade Gradient */}
+          <div className="absolute inset-x-0 bottom-0 h-42 sm:h-30 bg-linear-to-t from-white via-white/50 to-transparent z-10"></div>
+          {/* Mobile & iPad Background Image */}
+          <img 
+            src="/images/Eldercare_patientMobile.png" 
+            alt="Healthcare Professional with Patient" 
+            className="lg:hidden w-full h-full object-cover object-center"
+          />
+          {/* Desktop Background Image */}
           <img 
             src="/images/Eldercare_patient1.jpg" 
             alt="Healthcare Professional with Patient" 
-            className="w-full h-full object-cover object-[65%_center] sm:object-[75%_center] md:object-right"
+            className="hidden md:block w-full h-full object-cover object-right"
           />
         </div>
 
