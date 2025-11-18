@@ -9,7 +9,8 @@ import Solutions from './pages/Solutions';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
-import Blog from './pages/Blog';
+import BlogListing from './pages/BlogListing';
+import BlogPost from './pages/BlogPost';
 import Docs from './pages/Docs';
 import Support from './pages/Support';
 
@@ -25,7 +26,8 @@ function App() {
           <Route path="/devices" element={<Devices />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog" element={<BlogListing />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/docs" element={<Docs />} />
           <Route path="/support" element={<Support />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

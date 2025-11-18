@@ -25,8 +25,8 @@ export default function Footer() {
             <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4">Resources</h3>
             <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
               <li><Link to="/blog" className="hover:text-white transition">Blog</Link></li>
-              <li><Link to="/docs" className="hover:text-white transition">Docs</Link></li>
               <li><Link to="/support" className="hover:text-white transition">Support</Link></li>
+              <li><a href="https://orders.niroga.ai" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Documentation</a></li>
             </ul>
           </div>
           <div>

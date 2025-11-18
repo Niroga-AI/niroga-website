@@ -130,5 +130,11 @@ export const pageMetadata = {
     keywords: 'terms of service, legal terms, service agreement, medical device terms, healthcare terms, user agreement',
     image: 'https://niroga.ai/niroga-logo.png',
     type: 'article'
+  },
+  blog: {
+    title: 'Blog - Latest Insights on AI & Healthcare | Niroga.ai',
+    description: 'Stay updated with the latest articles, research, and insights on AI-powered healthcare, medical diagnostics, and healthcare technology innovations from Niroga.ai experts.',
+    keywords: 'healthcare blog, AI medical articles, healthcare technology news, medical research, diagnostic innovations, AI society, 4th industrial revolution',
+    image: 'https://niroga.ai/niroga-logo.png'
   }
 };

@@ -56,14 +56,14 @@ const Home: React.FC = () => {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-blue-600 rounded-full font-bold text-base sm:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center"
               >
-                Explore Our Devices
+                Order Stethoscope Now
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
               </a>
               <a 
-                href="/technology"
+                href="/devices"
                 className="inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-md text-white rounded-full font-bold text-base sm:text-lg border-2 border-white/30 hover:bg-white/20 transition-all duration-300 text-center"
               >
-                Our Technology
+                View All Devices
               </a>
             </div>
 
@@ -255,15 +255,66 @@ const Home: React.FC = () => {
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Our Devices</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
-              Advanced acoustic monitoring devices powered by AI
+              Professional-grade stethoscope available now. Wearable chest band coming soon!
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
-            {/* Chest Band */}
-            <div className="group bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl sm:rounded-3xl p-6 sm:p-10 border-2 border-teal-200 hover:border-teal-400 hover:shadow-2xl transition-all duration-300">
+            {/* Electronic Stethoscope - MAIN HIGHLIGHT */}
+            <div className="group relative bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl sm:rounded-3xl p-6 sm:p-10 border-2 border-indigo-400 hover:border-indigo-600 hover:shadow-2xl transition-all duration-300 md:col-span-2 lg:col-span-1">
+              {/* Featured Badge */}
+              <div className="absolute -top-3 -right-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg">
+                ⭐ AVAILABLE NOW
+              </div>
+              
               <div className="mb-6 flex justify-center">
-                <img src="/images/chest-band.png" alt="Niroga Chest Band" className="w-48 sm:w-56 md:w-64 h-auto object-contain" />
+                <img src="/images/Product.png" alt="Niroga Electronic Stethoscope" className="w-48 sm:w-56 md:w-64 h-auto object-contain" />
+              </div>
+              
+              <div className="inline-block px-3 sm:px-4 py-2 bg-indigo-600 text-white rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6">
+                USB-C Connected
+              </div>
+              
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Niroga Stethoscope</h3>
+              <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-4 sm:mb-6">
+                Ultra-sensitive wired stethoscope for clinicians with high-fidelity sound, AI noise reduction, and 3D pathology localization.
+              </p>
+
+              <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
+                {[
+                  "High-fidelity audio capture",
+                  "AI noise reduction",
+                  "3D pathology localization",
+                  "Multi-device compatibility"
+                ].map((feature, i) => (
+                  <li key={i} className="flex items-center gap-2 sm:gap-3">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="text-white" size={14} />
+                    </div>
+                    <span className="text-sm sm:text-base text-gray-700">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <a 
+                href="https://orders.niroga.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-bold text-sm sm:text-base hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+              >
+                Order Now <ArrowRight size={16} />
+              </a>
+            </div>
+
+            {/* Chest Band - COMING SOON */}
+            <div className="group relative bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl sm:rounded-3xl p-6 sm:p-10 border-2 border-teal-200 opacity-75 md:col-span-2 lg:col-span-1">
+              {/* Coming Soon Badge */}
+              <div className="absolute -top-3 -right-3 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg">
+                🚀 COMING SOON
+              </div>
+              
+              <div className="mb-6 flex justify-center relative">
+                <img src="/images/chest-band.png" alt="Niroga Chest Band" className="w-48 sm:w-56 md:w-64 h-auto object-contain opacity-60" />
               </div>
               
               <div className="inline-block px-3 sm:px-4 py-2 bg-teal-600 text-white rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6">
@@ -291,51 +342,12 @@ const Home: React.FC = () => {
                 ))}
               </ul>
 
-              <a 
-                href="/devices"
-                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r from-teal-600 to-cyan-600 text-white rounded-full font-bold text-sm sm:text-base hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+              <button 
+                disabled
+                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 bg-gray-400 text-white rounded-full font-bold text-sm sm:text-base w-full sm:w-auto cursor-not-allowed"
               >
-                Learn More <ArrowRight size={16} />
-              </a>
-            </div>
-
-            {/* Electronic Stethoscope */}
-            <div className="group bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl sm:rounded-3xl p-6 sm:p-10 border-2 border-indigo-200 hover:border-indigo-400 hover:shadow-2xl transition-all duration-300">
-              <div className="mb-6 flex justify-center">
-                <img src="/images/Product.png" alt="Niroga Electronic Stethoscope" className="w-48 sm:w-56 md:w-64 h-auto object-contain" />
-              </div>
-              
-              <div className="inline-block px-3 sm:px-4 py-2 bg-indigo-600 text-white rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6">
-                USB-C Connected
-              </div>
-              
-              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Electronic Stethoscope</h3>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-4 sm:mb-6">
-                Ultra-sensitive wired stethoscope for clinicians with high-fidelity sound, AI noise reduction, and 3D pathology localization.
-              </p>
-
-              <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
-                {[
-                  "High-fidelity audio capture",
-                  "AI noise reduction",
-                  "3D pathology localization",
-                  "Multi-device compatibility"
-                ].map((feature, i) => (
-                  <li key={i} className="flex items-center gap-2 sm:gap-3">
-                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="text-white" size={14} />
-                    </div>
-                    <span className="text-sm sm:text-base text-gray-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <a 
-                href="/devices"
-                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-bold text-sm sm:text-base hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
-              >
-                Learn More <ArrowRight size={16} />
-              </a>
+                Coming Soon
+              </button>
             </div>
           </div>
         </div>

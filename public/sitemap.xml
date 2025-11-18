@@ -52,6 +52,22 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog Page -->
+  <url>
+    <loc>https://niroga.ai/blog</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://niroga.ai/blog/ai-expanding-role-next-human-chapter</loc>
+    <lastmod>2025-11-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Privacy Policy Page -->
   <url>
     <loc>https://niroga.ai/privacy-policy</loc>
